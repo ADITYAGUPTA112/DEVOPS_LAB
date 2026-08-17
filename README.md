@@ -255,3 +255,6 @@ To demonstrate how CI prevents bad code from reaching production:
 | **Nginx returns 403 Forbidden** | Parent directory permission restricted | `sudo chmod 755 /var`<br>`sudo chmod 755 /var/www`<br>`sudo chmod -R 755 /var/www/jenkins-demo` |
 | **Website does not open (Connection Refused)** | Port 8081 not bound or Nginx inactive | `sudo nginx -t`<br>`sudo systemctl restart nginx`<br>`sudo ss -lntp \| grep 8081` |
 | **Jenkins clone failure** | Auth error or branch mismatch | Check repo URL, branch (`main`), internet access, and credentials ID. |
+
+# DEVOPS_LAB
+
